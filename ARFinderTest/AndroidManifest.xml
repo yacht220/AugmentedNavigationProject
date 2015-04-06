@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.lenovo.arfindertest"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/lenovoicon" android:label="@string/app_name">
+        <activity android:name=".ARFinderTest"
+                  android:label="@string/app_name"
+                  android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".DepthOfField" android:launchMode="singleInstance" />
+        <activity android:name=".GoogleMap" android:launchMode="singleInstance" />
+        <uses-library android:name="com.google.android.maps" />
+    </application>
+    
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+</manifest> 

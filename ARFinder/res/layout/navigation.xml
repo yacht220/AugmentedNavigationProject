@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:paddingTop="25dip"
+    android:layout_width="fill_parent"
+    android:layout_height="390dip" >    
+
+    <com.lenovo.android.navigator.NavigationView
+       	android:id="@+id/navigation"
+       	android:layout_width="fill_parent"
+       	android:layout_height="fill_parent" />
+    
+    <FrameLayout
+    	android:id="@+id/prompt"
+    	android:visibility="invisible"
+    	android:layout_gravity="center" 
+    	android:background="@drawable/dlg_background"
+    	android:layout_width="240dip"
+    	android:layout_height="200dip" >  
+	    	  
+	    <ImageView android:id="@+id/prompt_image"
+	    	android:layout_marginTop="4dip"
+	    	android:layout_gravity="center_horizontal|top" 
+	    	android:layout_width="126dip"
+	    	android:layout_height="114dip" />
+	        	
+		<TextView
+			android:layout_gravity="center_horizontal|bottom" 
+			android:id="@+id/prompt_text"
+			android:layout_width="wrap_content"
+			android:layout_height="50dip"		
+			android:gravity="center" />   
+	</FrameLayout>
+	
+</FrameLayout>
+

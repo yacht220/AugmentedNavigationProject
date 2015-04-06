@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">ARFinder</string>
+	<string name="notification">Notification</string>
+	<string name="reconnect">重试</string>
+	<string name="cancel">取消</string>
+	<string name="close">关闭</string>
+	<string name="save">保存</string>
+
+	<string name="gps_searching">正在搜索GPS信号</string>
+	<string name="gps_unavailable">获取GPS失败</string>
+
+	<string name="dinning">餐厅</string>
+	<string name="shop">购物</string>
+	<string name="bus">公交</string>
+	<string name="gas">加油站</string>
+	<string name="full">全部类别</string>
+
+	<string name="menu_help">帮助</string>
+	<string name="menu_catagory">类别</string>
+	<string name="menu_exit">退出</string>
+
+	<string name="go_to_here">导航到此</string>
+	<string name="turn_right">Please Turn right at</string>
+	<string name="turn_left">Please Turn left at</string>
+	<string name="turn_back">Please Turn back at</string>
+	<string name="finish_default">导航结束.</string>
+	<string name="prefix_navigation_finish">You are in the target area. Target is in the
+	</string>
+	<string name="suffix_navigation_finish">side. Please pay attention.</string>
+	<string name="detail_info">TBD</string>
+	<string name="save_notification">快照已保存.</string>
+	<string name="file_not_found">无法找到快照!</string>
+	<string name="no_navigation">未搜索到导航路径.</string>
+	<string name="navigation_dlg_title">导航路径</string>
+	<string name="navigation_ok">确认导航</string>
+	<string name="navigation_cancel">取消导航</string>
+	<string name="navigation_reset">重置</string>
+
+	<string name="can_not_save_image">无法保存快照, 请查看SD卡状态.</string>
+	<string name="snap_shot_removed">快照已被删除.</string>	
+	<string name="searching_route">正在搜索导航路径</string>
+	
+	<string name="str_message">无法取得Location!</string>
+</resources>

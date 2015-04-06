@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gps_failed_view"
+    android:width="271dip"
+    android:height="203dip"
+    android:text="@string/gps_unavailable"
+    android:drawableTop="@drawable/gps_search_failed"
+    android:paddingLeft="30dip"
+    android:paddingRight="30dip"
+    android:paddingTop="30dip"
+    android:paddingBottom="30dip"
+    android:gravity="bottom|center_horizontal" />
+ 

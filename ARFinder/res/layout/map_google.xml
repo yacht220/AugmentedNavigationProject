@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/white"
+    >
+   <com.google.android.maps.MapView 
+    android:id="@+id/gmapView" 
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent" 
+    android:enabled="true" 
+    android:clickable="true" 
+    android:apiKey="0OiCt65yEOQG6g8TDdeYSA1eTRwqSGTuv2vdhCg"
+   />
+   <!-- 
+   		0VHL0dwWEe-oC7zZwn9mrnqV5skS11hdw0bxFfg 
+   		0OiCt65yEOQG6g8TDdeYSA1eTRwqSGTuv2vdhCg
+   	-->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+        />
+        
+        <view class = "com.lenovo.android.navigator.CompassView"
+        	android:layout_marginLeft="250dip"
+        	android:id="@+id/compassView"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content" 
+        	android:layout_gravity="top|right"
+        />
+	    
+	    <!-- info card view  -->     
+   		<include android:id="@+id/infocard_panel" 
+    		layout="@layout/info_card"
+    		android:visibility="invisible"
+		/>
+    		
+	    <!-- detail view  -->       
+    	<include android:id="@+id/detail_panel" 
+    		layout="@layout/info_detail"
+    		android:visibility="invisible"
+		/>    		
+        
+        <ImageView
+            android:id="@+id/zoom"
+            android:src="@drawable/map_zoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:layout_marginBottom="15dip"
+            android:soundEffectsEnabled="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"     
+        />
+        <ImageView
+            android:id="@+id/zoom_deflate"
+            android:src="@drawable/map_zoom_deflate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dip"
+            android:layout_marginBottom="25dip"
+            android:soundEffectsEnabled="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"     
+        />
+         <ImageView
+            android:id="@+id/zoom_blow"
+            android:src="@drawable/map_zoom_blow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="82dip"
+            android:layout_marginBottom="25dip"
+            android:soundEffectsEnabled="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"     
+        />
+        <ImageButton
+            android:id="@+id/back"
+            android:src="@drawable/go_back_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip"
+            android:background="@null"
+            android:soundEffectsEnabled="true"    
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+        />
+	</RelativeLayout> 
+</FrameLayout>

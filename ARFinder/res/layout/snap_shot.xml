@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/snap_shot_background">
+		
+    <LinearLayout
+    	android:id="@+id/main_area"
+    	android:layout_gravity="top"
+    	android:layout_marginTop="5dip"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="440dip"
+    	android:orientation="vertical"> 
+
+    	<ImageSwitcher android:id="@+id/switcher"
+    		android:layout_gravity="center"
+        	android:layout_width="254dip"
+        	android:layout_height="380dip" />
+        
+        <Gallery android:id="@+id/gallery"   	
+	        	android:layout_width="fill_parent"
+	        	android:layout_height="60dip"
+	        	android:spacing="20dip" />
+    </LinearLayout> 
+
+	<Button android:id="@+id/close"
+		android:layout_gravity="bottom|center_horizontal"
+		android:background="@drawable/go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    	    
+    <ImageView android:id="@+id/save"
+    	android:src="@drawable/save"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="bottom|right"
+    	android:layout_marginBottom="90dip"
+    	android:layout_marginRight="25dip" />
+       
+	<ListView
+        android:id="@+id/info_card"
+        android:layout_width="fill_parent"
+        android:layout_height="81dip" 
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:paddingTop="5dip"
+   		android:background="@drawable/card_background"
+        android:visibility="invisible"/>
+        
+     <Button android:id="@+id/save_btn"
+     	android:background="@drawable/ic_save"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_gravity="bottom|left"
+		android:layout_marginBottom="95dip"
+    	android:layout_marginLeft="33dip" />    	
+
+</FrameLayout>

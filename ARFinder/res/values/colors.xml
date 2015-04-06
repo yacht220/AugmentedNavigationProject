@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<drawable name="translucent_background">#00FFFFFF</drawable>
+	<drawable name="close_background">#00FFFFFF</drawable>
+	<drawable name="selected_background">#FFFF00</drawable>
+	<drawable name="white">#FFFFFF</drawable>
+	<drawable name="blue">#0000FF</drawable>
+</resources>

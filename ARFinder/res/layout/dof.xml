@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <view class = "com.lenovo.arfindertest.DepthOfField$DofView"
+        android:id="@+id/dofview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <com.lenovo.android.navigator.ScalerView
+            android:id="@+id/scaler"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+	    	android:id="@+id/indicator"
+	      	android:src="@drawable/indicator"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true" />
+	        
+	    <!-- info card view  -->     
+	    <!--<LinearLayout
+	        android:id="@+id/info_display_card"
+	    	android:layout_gravity="left"
+	        android:orientation="vertical"
+	        android:paddingLeft="10dip"
+	        android:layout_width="fill_parent"
+	        android:layout_height="81dip" 
+            android:layout_marginTop="25dip"
+            android:paddingTop="5dip"
+	        android:background="@drawable/card_background"
+	        android:visibility="invisible" 
+	        >
+	        <TextView android:id="@+id/info_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textStyle="bold"
+	            android:singleLine="true" />	            
+	        <TextView android:id="@+id/info_addr"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:singleLine="true"
+	            android:textAppearance="?android:attr/textAppearanceSmall" />	
+	            <LinearLayout
+	        		android:orientation="horizontal"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content" >	
+	        		<TextView android:id="@+id/info_distance"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textAppearance="?android:attr/textAppearanceSmall"
+	                    android:singleLine="true"/>	                    
+	                <TextView android:id="@+id/info_phone"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:paddingLeft="10dip"
+	                    android:singleLine="true"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+	            </LinearLayout>
+	    </LinearLayout> 
+	    
+	    --><!-- info card view  -->     
+   		<include android:id="@+id/infocard_panel" 
+    		layout="@layout/info_card"
+    		android:visibility="invisible" />    
+	    
+	    <!-- detail view  -->       
+    	<include android:id="@+id/detail_panel" 
+    		layout="@layout/info_detail"
+    		android:visibility="invisible" />
+    		  		
+    	<ImageView
+            android:id="@+id/bar"
+            android:src="@drawable/bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"            
+        />
+        <ImageButton
+            android:id="@+id/back"
+            android:src="@drawable/go_back_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_marginBottom="15dip"
+			android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@null" 
+            android:soundEffectsEnabled="true"            
+        />
+	</RelativeLayout>   
+</FrameLayout>

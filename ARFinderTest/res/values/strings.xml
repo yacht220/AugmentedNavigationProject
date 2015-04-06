@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, ARFinderTest!</string>
+    <string name="app_name">ARFinderTest</string>
+    <string name="str_message">无法取得Location!</string>
+</resources>
